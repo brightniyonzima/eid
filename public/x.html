@@ -1,0 +1,93 @@
+<form>
+    <table width="860px" align="center" border="0" id="batch_data">
+        <tr>
+            <th colspan="4">PCR DRIED BLOOD SPOT Dispatch Form </th>
+        </tr>
+        <tr>
+            <td><img src="images/coat-of-arms.jpg" style="width:100px; height:auto;float:right; margin-right:12px;"></td>
+            <td>
+                <div style="width: 225px; text-align:center;">Envelope Number:</div>
+                <input type="text" id="envelope_number" name="envelope_number" required="YES" tabindex="1"/>
+
+            </td>
+            <td>
+                <div style="width: 175px; text-align:center;">
+                    Batch Number:
+                </div>
+                <input type="text"  id="batch_number" name="batch_number" tabindex="2" required="YES" />
+                <input type="hidden" name="batch_id" id="batch_id" /><? /* stores DB row id */ ?>
+
+            </td>
+            <td align="right" >&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td><div style="width:100px; display:block; float:right; margin-right:10px;">Health Unit:</div></td>
+            <td> <input type="text"  style="width:225px; " class="xl" id="h_facility" name="h_facility" tabindex="3" /> </td>
+            <td rowspan="4">
+                <div style="width: 175px; text-align:center;">
+                <b>Site Return Address</b><br>
+                (Clinic / Department)<br>
+                </div>
+
+                <textarea   style="height: 5em; width:175px; text-align:left"  
+                                id="results_return_address" name="results_return_address" 
+                                    tabindex="7"></textarea>
+            </td>
+            <td rowspan="4" align="right">
+                <div style="width: 175px; text-align:center;">
+                    &nbsp;<br>
+                    Comments/Issues:
+                </div>
+                <textarea   style="height: 5em; width:175px;"  
+                                tabindex="8" id="senders_comments" 
+                                    name="senders_comments"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><div style="width:100px; display:block; float:right; margin-right:10px;">District:</div> </td>
+            <td> <input type="text" style="width:225px;" id="h_district" name="h_district" class="xl"  tabindex="4" required="YES" /> </td>
+        </tr>
+        <tr>
+            <td><div style="width:100px; display:block; float:right; margin-right:10px;">Name of sender:</div> </td>
+            <td> <input type="text" id="senders_name" name="senders_name" style="width:225px; " class="xl"  tabindex="5" required="YES" /> </td>
+        </tr>
+        <tr>
+            <td><div style="width:100px; display:block; float:right; margin-right:10px;">Telephone No:</div> </td>
+            <td> 
+                <input type="text"   id="senders_telephone" name="senders_telephone"  
+                    style="width:225px; " class="xl"  tabindex="6"  required="YES"/> </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-bottom: 0px; padding-top: 25px;">
+
+                <div style="margin-bottom:5px;" >
+                    Date Samples Dispatched from health unit: 
+                    <input type="text" class="datepicker xl"  required="YES" 
+                            id="date_dispatched_from_facility" name="date_dispatched_from_facility"  tabindex="9" />
+                </div>
+                How will samples be transported back:
+                <select style=" width:11em; " class="xl"  tabindex="10"  id="results_transport_method" name="results_transport_method" >
+                    <option>1.POSTA UGANDA</option>
+                    <option>2.PICK FROM LAB DIRECTLY</option>
+                </select>
+            </td>
+            <td colspan="2"  style="padding-bottom: 0px; padding-top: 25px;">
+                <div style="margin-bottom:5px;float:left; " >
+                    <div>
+                        <div style="float:left">Name of Testing Lab:&nbsp;</div>
+                        <select  style="FLOAT:LEFT" class="xl"  tabindex="11" id="h_lab" name="h_lab">
+                            <option>CPHL</option>
+                        </select>
+                    </div>
+                    <div style="clear:both">
+                        
+                    <div style="float:left">Date samples received at lab:&nbsp;</div>
+                        <input type="text" class="datepicker xl"  tabindex="12"  required="YES"  id="date_rcvd_by_cphl" name="date_rcvd_by_cphl" >
+                    </div>
+                </div>
+                <input type="submit" style="float:right;width:11em; height: 3em;"  tabindex="13" id="submit_batch" name="submit_batch" value="SAVE BATCH DATA"/>
+            </td>
+        </tr>
+    </table>
+    </form>
