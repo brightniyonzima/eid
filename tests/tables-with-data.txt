@@ -1,0 +1,22 @@
+| appendices
+| appendix_categories
+| entry_points
+| facility_levels
+| regions
+| user_permissions
+| user_roles
+
+
+/* 	These tables should not have all the production data. 
+ *	They need just a few rows for convenience
+**/
+
+| users
+
+
+| ips_facilities                    
+| ips                               
+| facilities
+	| districts
+	| hubs                              
+

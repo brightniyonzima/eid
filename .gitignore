@@ -1,0 +1,7 @@
+/vendor
+/cyrax
+/node_modules
+/sublime-text
+Homestead.yaml
+Homestead.json
+.env
