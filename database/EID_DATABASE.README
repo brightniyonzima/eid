@@ -1,0 +1,54 @@
+@Author: Richard K. Obore <oborerichard@gmail.com>
+@Dev Team:	Better Data/Tornado Unit
+@Client: Clinton Health Access Initiative (CHAI)
+
+Pre-amble:
+================
+The goal is to move tables from old EID database to this new database in an intelligent way.
+Of course we could just copy and paste, but that would carry over the old design flaws.
+So instead, we are doing it table by table, as the need arises.
+	Much thought has been given to every table in the newly revamped database.
+	The schema has changed to adapt all good features from the old database while dropping bad
+	features or re-designing the schema to be more optimal.
+NOTE: Data from the old database has not yet been loaded into the new database
+
+
+Schema:
+=========
+
+The following tables are used in the new database.
+They have been checked and their migrations created:
+	users
+	user_types
+	organizations
+	organization_types
+	batches
+	dbs_samples
+	login_session
+
+
+The following tables from the old database are used in the new database.
+Simple changes have been made where necessary: e.g. data cleaning, renaming, etc.
+No migrations have been made yet (until we can Eloquent-seed them with their old data)
+	prophylaxis
+	entry_points
+	sample_rejection_reasons
+
+
+
+The following tables are being used although they have not been checked or optimized yet.
+	appendix_pmtctarvsinfants
+	appendix_pmtctarvsmothersantenatal
+	appendix_pmtctarvsmothersdelivery
+	appendix_pmtctarvsmotherspostnatal
+	appendix_samplerejectionreason
+	appendix_sampletype
+	districts
+	provinces
+	facilities
+	facility_levels
+	facilitys
+	hubs
+	ips
+	ips_facilities
+	regions

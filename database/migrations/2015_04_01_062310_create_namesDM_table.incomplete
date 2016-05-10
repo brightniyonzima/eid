@@ -1,0 +1,26 @@
+<?php
+
+// use Illuminate\Database\Schema\Blueprint;
+// use Illuminate\Database\Migrations\Migration;
+
+// class CreateMetaphoneTable extends Migration {
+
+// 	public function up()
+// 	{
+// 		Schema::create('dm_names', function(Blueprint $table)
+// 		{
+// 			$table->engine = 'InnoDB';
+
+// 			$table->increments('id');
+// 			$table->string('name', 15);
+// 			$table->string('pri_dm', 15);
+// 			$table->string('sec_dm', 15);			
+// 		});
+// 	}
+
+
+// 	public function down()
+// 	{
+// 		Schema::drop('dm_names');
+// 	}
+// }
